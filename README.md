@@ -31,172 +31,119 @@ Publish the website in the LocalHost.
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Style Gallery</title>
+  <title>Dribbble Style</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color:blanchedalmond;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-
-    .navbar {
-      background-color:#1f1f1f;
-    }
-    .navbar-brand, .nav-link {
-      color: #fff !important;
-    }
-    .nav-link:hover {
-      color: #ff4081 !important;
-    }
-
-    
-    .card {
-      border: none;
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
-    .card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .card-body {
-      background:whitesmoke;
-      padding: 15px;
-    }
-    .card-title {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 5px;
-    }
-    .meta {
-      font-size: 13px;
-      color:#1f1f1f;
-    }
-
-    
-    footer {
-      background-color:grey;
-      color:#fff;
-      padding: 30px 0;
-      margin-top: auto;
-    }
-    footer a {
-      color: #ff4081;
-      text-decoration: none;
-    }
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+ 
 </head>
-<body>
+<body class="bg-light d-flex flex-column min-vh-100">
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Dribbble</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <a class="navbar-brand fw-bold" href="#">Dribble</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Community</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Jobs</a></li>
+
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              More
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">page 1</a></li>
+              <li><a class="dropdown-item" href="#">page 2</a></li>
+              <li><a class="dropdown-item" href="#">page 3</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">page 4</a></li>
+            </ul>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Alert -->
   <div class="container mt-4">
-    <div class="alert alert-info alert-dismissible fade show shadow-sm" role="alert">
+    <div class="alert alert-info alert-dismissible " role="alert">
       <strong> New Update!</strong> Check out the latest design shots uploaded today.
-      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <button type="button" class="btn-close"  aria-label="Close"></button>
     </div>
   </div>
 
-  <!-- Gallery Section -->
-  <div class="container py-4">
-    <h2 class="text-center mb-4">Dribbble Style Image - SAMANTHA SHREE (25017585)</h2>
+  <div class="container py-4 flex-grow-1">
+    <h2 class="text-center fw-semibold">SAMANTHA SHREE S.V(25017585)</h2>
     <div class="row g-4">
 
-      <!-- Card 1 -->
       <div class="col-md-3 col-sm-6">
-        <div class="card">
-          <img src="kim tae.avif" alt="Image 1">
+        <div class="card border-0 shadow-sm">
+          <img src="kim tae.avif" class="card-img-top" alt="Image 1">
           <div class="card-body">
-            <h5 class="card-title">KIM TAEHYUNG</h5>
-            <p class="meta">MY FAVOURITE</p>
+            <h5 class="card-title mb-1">KIM TAEHYUNG</h5>
+            <p class="card-text text-muted small">MY FAVOURITE</p>
           </div>
         </div>
       </div>
 
       <!-- Card 2 -->
       <div class="col-md-3 col-sm-6">
-        <div class="card">
-          <img src="jk.jpg" alt="Image 2">
+        <div class="card border-0 shadow-sm">
+          <img src="RM.jpg" alt="Image 2">
           <div class="card-body">
-            <h5 class="card-title">JOEN JOUGKOOK</h5>
-            <p class="meta">NAUGHTY BOY</p>
+            <h5 class="card-title mb-1">KIM NAMJOON</h5>
+            <p class="card-text text-muted small">BEST LEADER</p>
           </div>
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="col-md-3 col-sm-6">
-        <div class="card">
-          <img src="jimin.webp" alt="Image 3">
+        <div class="card border-0 shadow-sm">
+          <img src="jimin.webp" class="card-img-top" alt="Image 3">
           <div class="card-body">
-            <h5 class="card-title">PARK JIMIN</h5>
-            <p class="meta">BEST SINGER</p>
+            <h5 class="card-title mb-1">PARK JIMIN</h5>
+            <p class="card-text text-muted small">BEST SINGER</p>
           </div>
         </div>
       </div>
 
-      <!-- Card 4 -->
       <div class="col-md-3 col-sm-6">
-        <div class="card">
-          <img src="RM.jpg"Image 4">
+        <div class="card border-0 shadow-sm">
+          <img srC="jhope.jpg" class="card-img-top" alt="Image 4">
           <div class="card-body">
-            <h5 class="card-title">KIM NAMJOON</h5>
-            <p class="meta">THE BEST LEADER</p>
+            <h5 class="card-title mb-1">JHOPE</h5>
+            <p class="card-text text-muted small">BEST HYUNG</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
-  <!-- Footer -->
-  <footer class="text-center">
+  <footer class="bg-dark text-white text-center py-4 mt-auto">
     <div class="container">
-      <p class="mb-2">& Samantha Shree (25017585)</p>
-    
-    </div>
+      <p class="mb-2">© 2025 <strong>Desighned by Samantha shree(25017585) 
+
+      </strong></p>
+      </div>
   </footer>
 
-  <!-- Bootstrap JS + Icons -->
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </body>
 </html>
+     
 
+  
 ```
 
 ## OUTPUT:
-![alt text](saman/bootapp/static/project.png)
+![alt text](<saman/bootapp/static/Screenshot (67).png>)
+![alt text](<saman/bootapp/static/Screenshot (68).png>)
 
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
