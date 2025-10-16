@@ -1,5 +1,5 @@
 # Project Responsive Web Design using Bootstrap
-## Date:
+## Date:15.10.2025
 
 ## AIM:
 To create a simplified clone of Dribbble (https://dribbble.com/) landing page.
@@ -28,122 +28,118 @@ Publish the website in the LocalHost.
 ## PROGRAM :
 ```
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Dribbble Style</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
- 
-</head>
-<body class="bg-light d-flex flex-column min-vh-100">
-
-  
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Dribble</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Shots</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Designers</a></li>
-
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              More
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">page 1</a></li>
-              <li><a class="dropdown-item" href="#">page 2</a></li>
-              <li><a class="dropdown-item" href="#">page 3</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">page 4</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <div class="container mt-4">
-    <div class="alert alert-info alert-dismissible " role="alert">
-      <strong> New Update!</strong> Check out the latest design shots uploaded today.
-      <button type="button" class="btn-close"  aria-label="Close"></button>
-    </div>
-  </div>
-
-  <div class="container py-4 flex-grow-1">
-    <h2 class="text-center fw-semibold">SAMANTHA SHREE S.V(25017585)</h2>
-    <div class="row g-4">
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card border-0 shadow-sm">
-          <img src="kim tae.avif" class="card-img-top" alt="Image 1">
-          <div class="card-body">
-            <h5 class="card-title mb-1">KIM TAEHYUNG</h5>
-            <p class="card-text text-muted small">MY FAVOURITE</p>
-          </div>
+<html lang="en">
+    <head>
+        <title>dribble</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Dribble</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Shots</a></li>
+                    <li><a href="#">Designers</a></li>
+                    <li><a href="#">Teams</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">login</a></li>
+                    <li><a href="#">Sign in</a></li>
+                </ul>
+                
+            </div>
+        </nav>
+        <div class="bg-dark text-center">
+            <p>New update ! , click here and learn more .</p>
+                <button type="button" class="btn btn-success">read</button></p>
         </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-3 col-sm-6">
-        <div class="card border-0 shadow-sm">
-          <img src="RM.jpg" alt="Image 2">
-          <div class="card-body">
-            <h5 class="card-title mb-1">KIM NAMJOON</h5>
-            <p class="card-text text-muted small">BEST LEADER</p>
-          </div>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a href="#">Page</a>
+                        <ul class="dropdown-menu" >
+                			<li><a href="#">page 1</a></li>
+                			<li><a href="#">Page 2</a></li>
+                			<li><a href="#">Page 3</a></li>
+                        </ul>
+                    </li>
+                    </ul>
+            </div>
+        </nav>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card border-dark text-center">
+                    <img src="vvv.jpg" class="card-img-top" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Kim Taehyung</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card border-dark text-center">
+                    <img src="jkkk.jpg" class="img-fluid rounded" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Joen Jungkook</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card border-dark text-center">
+                    <img src="jiminn.jpg" class="img-fluid rounded" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Park jimin</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card border-dark text-center">
+                    <img src="rmmmm.jpg" class="img-fluid rounded" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Kim Namjoon</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card border-0 shadow-sm">
-          <img src="jimin.webp" class="card-img-top" alt="Image 3">
-          <div class="card-body">
-            <h5 class="card-title mb-1">PARK JIMIN</h5>
-            <p class="card-text text-muted small">BEST SINGER</p>
-          </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card border-dark text-center">
+                    <img src="suga.jpg" class="card-img-top" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Min yoongi</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card border-dark text-center">
+                    <img src="jinn.jpg" class="img-fluid rounded" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Kim soek jin</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card border-dark text-center">
+                    <img src="hpoe.jpg"img-fluid rounded" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Jhope</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="card border-dark text-center">
+                    <img src="bts.jpg" class="img-fluid rounded" style="height:150px; object-fit:cover;">
+                    <p class="mt-2 fw-semibold">Worlds Biggest Band</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card border-0 shadow-sm">
-          <img srC="jhope.jpg" class="card-img-top" alt="Image 4">
-          <div class="card-body">
-            <h5 class="card-title mb-1">JHOPE</h5>
-            <p class="card-text text-muted small">BEST HYUNG</p>
-          </div>
+                </div>
         </div>
-      </div>
-
-    </div>
-  </div>
-
-  <footer class="bg-dark text-white text-center py-4 mt-auto">
-    <div class="container">
-      <p class="mb-2">© 2025 <strong>Desighned by Samantha shree(25017585) 
-
-      </strong></p>
-      </div>
-  </footer>
-
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+        </div>
+        <footer class="copyrights text-center">
+            &copy; Samantha Shree S.V (25017585)
+        </footer>
+    </body>
 </html>
-     
 
   
 ```
 
 ## OUTPUT:
-![alt text](<saman/bootapp/static/Screenshot (67).png>)
-![alt text](<saman/bootapp/static/Screenshot (68).png>)
-
+![alt text](<Screenshot (71).png>)
 ## RESULT:
 The Project for responsive web design using Bootstrap is completed successfully.
